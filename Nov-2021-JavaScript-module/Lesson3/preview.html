@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // let menu = ['about', 'main', 'contacts', 'teams', 'xxx'];
+    // // document.write('<ul>');
+    // for (let i = 0; i < menu.length; i++) {
+    //     document.write(`<li>${menu[i]}</li>`);
+    // }
+    //
+    // // document.write('</ul>');
+
+    let products = [
+        {
+            title: 'milk',
+            price: 20,
+            image: 'https://www.comunicaffe.com/wp-content/uploads/2017/02/milk.jpg'
+        },
+        {
+            title: 'juice',
+            price: 22,
+            image: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F24%2F2018%2F03%2F2565201_cooki_50_sdw_0-1.jpg&q=85'
+        },
+        {
+            title: 'tomato',
+            price: 15,
+            image: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Tomato-global.png'
+        },
+        {
+            title: 'tea',
+            price: 18,
+            image: 'https://nebula.org/blog/wp-content/uploads/2021/02/iaso-tea-11.jpg'
+        },
+    ];
+    document.write(`<ul>`)
+    for (let i = 0; i < products.length; i++) {
+        let products = products[i];
+        document.write(`<li>${products.title} ${products.price} <img src="${products.image}" alt=""></li>`);
+
+    }
+    document.write(`</ul>`)
+
+
+</script>
+
+</body>
+</html>
